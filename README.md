@@ -1,3 +1,3 @@
-# BMI-Calculator
+# LWC Projects
 
-With this BMI Calculator you can calculate your Body Mass Index.
+This repo contains Lightning Web Components based projects.
