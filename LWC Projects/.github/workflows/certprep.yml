@@ -28,9 +28,9 @@ jobs:
           ~/sfdx/bin/sfdx version
       - name: Populate auth file with SFDX_URL secret of target org
         run: |
-          echo ${{ secrets.CERT_PREP_URL}} > ./CERT_PREP_URL.txt
+          echo ${{ secrets.CP_URL}} > ./CP_URL.txt
       - name: Authenticate to target Org
-        run: sfdx auth:sfdxurl:store -f ./CERT_PREP_URL.txt -s -a targetOrg
+        run: sfdx auth:sfdxurl:store -f ./CP_URL.txt -s -a targetOrg
       - name: Deployment - run all tests
         run: >
           sfdx force:source:deploy -p "force-app"  --testlevel RunLocalTests --json
