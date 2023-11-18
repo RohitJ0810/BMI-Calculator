@@ -3,8 +3,6 @@ on:
   push:
     paths:
       - force-app/**
-    branches:
-      - main
 jobs:
   deployment-to-certprep-org:
     runs-on: ubuntu-latest
