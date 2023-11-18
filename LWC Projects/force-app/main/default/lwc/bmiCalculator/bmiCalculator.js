@@ -18,8 +18,6 @@ export default class BmiCalculator extends LightningElement {
 
     submitHandler(event){
         event.preventDefault()
-        console.log('height-->',this.height)
-        console.log('weight-->',this.weight)
         this.calculate()
     }
 
