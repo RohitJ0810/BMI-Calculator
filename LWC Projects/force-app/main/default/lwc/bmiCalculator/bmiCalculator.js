@@ -21,6 +21,7 @@ export default class BmiCalculator extends LightningElement {
         this.calculate()
     }
 
+    // This method calculates the bmi based on the input
     calculate(){
         let height = Number(this.height)/100
         let bmi = Number(this.weight)/(height*height)
