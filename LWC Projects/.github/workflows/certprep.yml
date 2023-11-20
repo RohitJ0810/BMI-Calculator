@@ -1,10 +1,9 @@
 name: Deployment to CertPrep Org
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
     paths:
-      - force-app/**
+      - 'force-app/**'
 jobs:
   deployment-to-certprep-org:
     runs-on: ubuntu-latest
