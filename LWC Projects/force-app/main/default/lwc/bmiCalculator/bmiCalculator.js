@@ -18,7 +18,7 @@ export default class BmiCalculator extends LightningElement {
 
     // Submit handler method
     submitHandler(event){
-        event.preventDefault()
+        event.preventDefault() // To prevent sf from saving
         this.calculate()
     }
 
