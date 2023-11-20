@@ -16,6 +16,7 @@ export default class BmiCalculator extends LightningElement {
         }
     }
 
+    // Submit handler method
     submitHandler(event){
         event.preventDefault()
         this.calculate()
