@@ -26,7 +26,6 @@ export default class BmiCalculator extends LightningElement {
     calculate(){
         let height = Number(this.height)/100
         let bmi = Number(this.weight)/(height*height)
-        console.log('bmi-->',bmi)
         this.bmiValue = Number(bmi.toFixed(2))
 
         if(this.bmiValue < 18.5){
